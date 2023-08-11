@@ -17,6 +17,7 @@ from trains.train_factory import train_factory
 
 
 def main(opt):
+  
   torch.manual_seed(opt.seed)
   torch.backends.cudnn.benchmark = not opt.not_cuda_benchmark and not opt.test
   Dataset = get_dataset(opt.dataset, opt.task)
@@ -27,6 +28,9 @@ def main(opt):
 
   os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpus_str
   opt.device = torch.device('cuda' if opt.gpus[0] >= 0 else 'cpu')
+  
+  # Free up GPU memory
+  torch.cuda.empty_cache()
   
   print('Creating model...')
   model = create_model(opt.arch, opt.heads, opt.head_conv)
