@@ -29,7 +29,7 @@ def main(opt):
   os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpus_str
   opt.device = torch.device('cuda' if opt.gpus[0] >= 0 else 'cpu')
   
-  # Free up GPU memory
+  #Free up GPU memory
   torch.cuda.empty_cache()
   
   print('Creating model...')
