@@ -1,3 +1,4 @@
-*
+ctdet/deepfashion2/*.pth
+ctdet/deepfadhion2_dla_34/*.pth
 !.gitignore
-!ctdet/**
+

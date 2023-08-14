@@ -110,6 +110,7 @@ ENV/
 # mypy
 .mypy_cache/
 
-#do not ignore
-!data/deepfashion2/**
-!exp/**
+exp/ctdet/deepfashion2/logs_2023-08-12-18-09_test/log.txt
+exp/ctdet/deepfashion2/logs_2023-08-12-18-09_test/opt.txt
+exp/ctdet/deepfashion2_dla_34/model_best.pth
+exp/ctdet/deepfashion2_dla_34/model_last.pth
