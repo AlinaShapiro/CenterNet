@@ -1,4 +1,8 @@
 ctdet/deepfashion2/*.pth
-ctdet/deepfadhion2_dla_34/*.pth
+ctdet/deepfashion2_dla_34/*.pth
+ctdet/deepfashion2_res_18/*.pth
+ctdet/deepfashion2_res_18_v2/*.pth
+ctdet/deepfashion2_res_18_v3/*.pth
 !.gitignore
+
 
